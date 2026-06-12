@@ -1,0 +1,23 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-06-12T15:40:00.739+05:30  INFO 25627 --- [resource-server] [           main] o.e.r.ResourceServerApplication          : Starting ResourceServerApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 25627 (/Users/A108706402/workspaces/authdemo/resource-server/target/resource-server-0.0.1-SNAPSHOT.jar started by A108706402 in /Users/A108706402/workspaces/authdemo)
+2026-06-12T15:40:00.744+05:30  INFO 25627 --- [resource-server] [           main] o.e.r.ResourceServerApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-12T15:40:01.980+05:30  INFO 25627 --- [resource-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-06-12T15:40:01.990+05:30  INFO 25627 --- [resource-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-12T15:40:01.990+05:30  INFO 25627 --- [resource-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-12T15:40:02.008+05:30  INFO 25627 --- [resource-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1221 ms
+2026-06-12T15:40:02.459+05:30  INFO 25627 --- [resource-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-06-12T15:40:02.473+05:30  INFO 25627 --- [resource-server] [           main] o.e.r.ResourceServerApplication          : Started ResourceServerApplication in 2.097 seconds (process running for 2.988)
+2026-06-12T15:40:05.717+05:30  INFO 25627 --- [resource-server] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-12T15:40:05.718+05:30  INFO 25627 --- [resource-server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-12T15:40:05.718+05:30  INFO 25627 --- [resource-server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-12T15:48:08.512+05:30  INFO 25627 --- [resource-server] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-12T15:48:08.519+05:30  INFO 25627 --- [resource-server] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete

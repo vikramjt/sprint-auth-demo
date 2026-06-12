@@ -1,0 +1,33 @@
+# ============================================================
+# sample-groups.ldif
+# Adds groups and assigns members.
+# Requires users in sample-users.ldif to already exist.
+# ============================================================
+
+# ── Group: developers ───────────────────────────────────────
+dn: cn=developers,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+objectClass: top
+cn: developers
+description: Developer group
+member: uid=alice,ou=people,dc=example,dc=org
+member: uid=bob,ou=people,dc=example,dc=org
+
+# ── Group: admins ───────────────────────────────────────────
+dn: cn=admins,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+objectClass: top
+cn: admins
+description: Administrator group
+member: uid=charlie,ou=people,dc=example,dc=org
+
+# ── Group: api-users (everyone can call the API) ────────────
+dn: cn=api-users,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+objectClass: top
+cn: api-users
+description: Users allowed to call protected APIs
+member: uid=alice,ou=people,dc=example,dc=org
+member: uid=bob,ou=people,dc=example,dc=org
+member: uid=charlie,ou=people,dc=example,dc=org
+

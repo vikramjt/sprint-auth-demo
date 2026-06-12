@@ -1,0 +1,51 @@
+# ============================================================
+# sample-users.ldif
+# Adds 3 sample users with different roles.
+# Passwords are stored as plaintext for dev/test only.
+# ============================================================
+
+# ── User: alice (developer) ─────────────────────────────────
+dn: uid=alice,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: alice
+cn: Alice Smith
+sn: Smith
+givenName: Alice
+mail: alice@example.org
+userPassword: alice123
+telephoneNumber: +1-555-0101
+title: Developer
+
+# ── User: bob (manager) ─────────────────────────────────────
+dn: uid=bob,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: bob
+cn: Bob Jones
+sn: Jones
+givenName: Bob
+mail: bob@example.org
+userPassword: bob123
+telephoneNumber: +1-555-0102
+title: Manager
+
+# ── User: charlie (admin) ───────────────────────────────────
+dn: uid=charlie,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: charlie
+cn: Charlie Brown
+sn: Brown
+givenName: Charlie
+mail: charlie@example.org
+userPassword: charlie123
+telephoneNumber: +1-555-0103
+title: Admin
+

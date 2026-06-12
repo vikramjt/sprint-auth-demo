@@ -1,0 +1,23 @@
+# ============================================================
+# modify-user.ldif
+# Examples of common user modification operations.
+# ============================================================
+
+# ── Change a user's password ────────────────────────────────
+dn: uid=alice,ou=people,dc=example,dc=org
+changetype: modify
+replace: userPassword
+userPassword: newpassword123
+
+# ── Add an email to a user (separate ldapmodify call) ───────
+# dn: uid=alice,ou=people,dc=example,dc=org
+# changetype: modify
+# add: mail
+# mail: alice.work@example.org
+
+# ── Change title ─────────────────────────────────────────────
+# dn: uid=alice,ou=people,dc=example,dc=org
+# changetype: modify
+# replace: title
+# title: Senior Developer
+

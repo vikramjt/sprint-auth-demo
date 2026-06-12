@@ -1,0 +1,13 @@
+# ============================================================
+# base-structure.ldif
+# Creates the base ou=people and ou=groups OUs.
+# Run this FIRST before adding any users or groups.
+# ============================================================
+dn: ou=people,dc=example,dc=org
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=org
+objectClass: organizationalUnit
+ou: groups
+

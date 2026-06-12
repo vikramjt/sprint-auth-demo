@@ -1,0 +1,7 @@
+# ============================================================
+# delete-user.ldif
+# Remove a user from LDAP.
+# ============================================================
+dn: uid=johndoe,ou=people,dc=example,dc=org
+changetype: delete
+

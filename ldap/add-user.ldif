@@ -1,0 +1,16 @@
+# ============================================================
+# add-user.ldif
+# Template for adding a single user.
+# Replace uid, cn, sn, mail, userPassword with real values.
+# ============================================================
+dn: uid=user1,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: user1
+cn: user1
+sn: user1
+mail: test@test.org
+userPassword: test123
+
